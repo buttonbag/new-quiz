@@ -1,0 +1,16 @@
+[
+    {
+        "question": "What does RGB stand for?",
+        "choice1": "right gather before",
+        "choice2": "restful given benefit",
+        "choice3": "red green blue",
+        "choice4": "raspberry guava blueberry"
+    },
+    {
+        "question": "What goes in front of a URL?",
+        "choice1": "HTTPS://",
+        "choice2": "HPPTS://",
+        "choice3": "HTPS://",
+        "choice4": "HSTPP://"
+    }
+]

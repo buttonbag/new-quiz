@@ -1,0 +1,1 @@
+/* load questions and answers from questions.json file into html dom */
