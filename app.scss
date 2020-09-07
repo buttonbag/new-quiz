@@ -1,0 +1,39 @@
+:root {
+    font-size: 62.5%;
+    margin: 0;
+    background-color: #707070;
+    font-family: 'Courier New', Courier, monospace;
+    color: #333;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {margin:0;}
+
+.container {
+    background-color: #d0d0d0;
+    width: 50vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+.btn {
+    font-size: 3rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #333;
+    background-color: #43baff;
+    padding: 1rem 2.5rem;
+    margin: .25rem;
+}
