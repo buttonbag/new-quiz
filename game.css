@@ -29,5 +29,11 @@
   background-color: #cc4831;
   color: #fff;
 }
+.choices .choice-container .correct {
+  background-color: forestgreen;
+}
+.choices .choice-container .incorrect {
+  background-color: #cc4831;
+}
 
 /*# sourceMappingURL=game.css.map */

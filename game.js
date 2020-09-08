@@ -52,8 +52,15 @@ askNewQuestion = () => {
 choices.forEach( choice => {
     choice.addEventListener("click", e => {
         const selected = e.target.dataset["number"];
-        console.log("clicked!");
-        askNewQuestion();
+        let newClass = "incorrect";
+        if(selected == currentQuestion.answer){
+            newClass = "correct";
+        } 
+        choice.classList.add(newClass);
+        setTimeout(() => {
+            choice.classList.remove(newClass);
+            askNewQuestion();
+        }, 1000);
     });
 });
 
