@@ -4,13 +4,15 @@
         "choice1": "right gather before",
         "choice2": "restful given benefit",
         "choice3": "red green blue",
-        "choice4": "raspberry guava blueberry"
+        "choice4": "raspberry guava blueberry",
+        "answer": "choice3"
     },
     {
         "question": "What goes in front of a URL?",
         "choice1": "HTTPS://",
         "choice2": "HPPTS://",
         "choice3": "HTPS://",
-        "choice4": "HSTPP://"
+        "choice4": "HSTPP://",
+        "answer": "choice1"
     }
 ]

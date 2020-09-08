@@ -14,6 +14,11 @@
   border: 1px solid #333;
   display: flex;
   align-items: center;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.choices .choice:hover {
+  background: #999;
 }
 .choices span {
   margin-right: 1rem;
