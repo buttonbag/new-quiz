@@ -9,7 +9,7 @@
   font-size: 2rem;
   width: 100%;
 }
-.choices .choice {
+.choices .choice-container {
   margin: 1rem 0;
   border: 1px solid #333;
   display: flex;
@@ -17,10 +17,13 @@
   cursor: pointer;
   transition: all 0.2s;
 }
-.choices .choice:hover {
+.choices .choice-container:hover {
   background: #999;
 }
-.choices span {
+.choices .choice-container .choice {
+  width: 100%;
+}
+.choices .choice-container span {
   margin-right: 1rem;
   padding: 1rem;
   background-color: #cc4831;
