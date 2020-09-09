@@ -18,9 +18,11 @@
         transition: all .2s;
 
         &:hover {background: #999}
-        .choice {width: 100%;}
+        .choice {
+            width: 100%;
+            padding: 1rem;
+        }
         span {
-            margin-right: 1rem;
             padding: 1rem;
             background-color: #cc4831;
             color: #fff;

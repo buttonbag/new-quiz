@@ -22,9 +22,9 @@
 }
 .choices .choice-container .choice {
   width: 100%;
+  padding: 1rem;
 }
 .choices .choice-container span {
-  margin-right: 1rem;
   padding: 1rem;
   background-color: #cc4831;
   color: #fff;
