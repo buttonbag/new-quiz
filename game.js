@@ -6,6 +6,10 @@ let questionCounter = 0;
 let currentQuestion = {};
 let availableQuestions = [];
 
+let CORRECT_BONUS = 10;
+let userScore = 0;
+
+
 let questions = [
     {
         "question": "What does RGB stand for?",
@@ -25,13 +29,14 @@ let questions = [
     }
 ]
 
-// fetch("questions.json")
-// .then(res => res.json())
-// .then(loadedQuestions=> {
-//     questions = loadedQuestions;
-// });
-
 askNewQuestion = () => {
+
+    if( /* there's no more questions */ questions.length <= questionCounter) {
+        /* store the userScore in localStorage */
+        localStorage.setItem('user score', userScore);
+        return window.location.assign('/end.html');
+    }
+
     currentQuestion = questions[questionCounter];
     questionContainer.innerText = currentQuestion.question;
     questionCounter++;
@@ -40,13 +45,6 @@ askNewQuestion = () => {
         const num = choice.dataset["number"]
         choice.innerText = currentQuestion["choice"+num];
     });
-    // questionContainer.innerText = loadedQuestions[0].question;
-   
-//     const questionIndex = availableQuestions.length;
-//     currentQuestion = availableQuestions[questionIndex]; /* availableQuestions comes from the SPREAD of objects in the array called questions in the startGame function */
-//     question.innerText = currentQuestion.question; /* displays the object called question => into the DOM element 
-// called question */
-
 }
 
 choices.forEach( choice => {
@@ -55,6 +53,8 @@ choices.forEach( choice => {
         let newClass = "incorrect";
         if(selected == currentQuestion.answer){
             newClass = "correct";
+            userScore = userScore+CORRECT_BONUS;
+            console.log(userScore);
         } 
         choice.classList.add(newClass);
         setTimeout(() => {
